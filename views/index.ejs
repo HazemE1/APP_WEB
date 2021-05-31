@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLT PÅ PLATS</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <%- include("navbar.ejs") %>
+        <!--Hero-->
+        <div class="hero" id="home">
+            <div class="hero__container">
+                <h1 class="hero__heading">Real time <span>inventory</span></h1>
+                <p class="hero__description">Beskrivning</p>
+                <button class="main__btn"><a href="#">Länk</a></button>
+            </div>
+        </div>
+
+        <!--About-->
+        <div class="main" id="about">
+            <div class="main__container">
+                <div class="main__img--container">
+                    <div class="main__img--card">Något fett här</div>
+                </div>
+                <div class="main__content">
+                    <h1>Vad gör vi?</h1>
+                    <h2>Vi hjälper företag att hålla koll på sitt lager och vid inventering</h2>
+                    <p>Ring 112 för mer info</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script src="app.js"></script>
+        <!-----------------------------FIREBASE SKIT--------------------------->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyA3rmAVxCrdVeZchaM7iNk2EqmjAchbEfU",
+                authDomain: "alltpp.firebaseapp.com",
+                databaseURL: "https://alltpp-default-rtdb.europe-west1.firebasedatabase.app",
+                projectId: "alltpp",
+                storageBucket: "alltpp.appspot.com",
+                messagingSenderId: "735022335719",
+                appId: "1:735022335719:web:763395d25b068244070442",
+                measurementId: "G-8TTQ9RERX3"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+
+
+
+
+
+
+</body>
+
+</html>

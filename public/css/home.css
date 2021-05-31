@@ -1,0 +1,49 @@
+:root {
+    --main: rgba(10, 10, 10, 0.356);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    all: none;
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--main);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+#title {
+    text-align: center;
+    margin: 40px;
+}
+
+#order-table {
+    border: 1px solid black;
+}
+
+#order-table th {
+    margin: 50px;
+    padding: 20px;
+    border: 0.2px solid black;
+}
+
+#order-table td {
+    margin: 50px;
+    padding: 20px;
+    border: 0.2px solid black;
+}

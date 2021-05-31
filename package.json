@@ -1,0 +1,19 @@
+{
+    "name": "projekt-allt-p-plats-webb",
+    "version": "1.0.0",
+    "description": "Webb app for projekt all på plats",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "firebase-admin": "^9.8.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.3"
+    }
+}

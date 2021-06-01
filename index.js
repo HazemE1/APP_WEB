@@ -26,7 +26,6 @@ app.get("/lager", async(req, res) => {
     const dir = {};
     await db.ref("Ingredient").once("value", async ds => {
         for (child in ds.toJSON()) {
-            console.log(ds.toJSON());
             var name = child;
             var currentAmount = ds.toJSON()[child]["currentAmount"];
             var recommendAmount = ds.toJSON()[child]["recommendedAmount"];

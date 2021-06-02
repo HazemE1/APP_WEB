@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #000000, #000000e0, #000000);
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 300px;
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.card-logo {
+    max-height: 80%;
+    max-width: 20%;
+    margin: 30px;
+    border-radius: 30px;
+    opacity: 0.8;
+}
